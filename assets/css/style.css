@@ -74,7 +74,7 @@ code {
   margin-right: 20px;
   margin-top: 25px;
   font-weight:600;
-  display: none;
+  /* display: none; */
 }
 
 
@@ -134,10 +134,13 @@ code {
   border-radius: 0;
 }
 
+#initialSearchButton,
 #searchButton{
   background:#14314f;
   opacity:.9;
 }
+
+#initialSearchButton:hover,
 #searchButton:hover{
   background:#6c757d;
 }
@@ -160,16 +163,6 @@ code {
   text-align:center
 }
 
-/* #userBucketListTitle{
-  background:
-} */
-
-/* #addToBucketListLink{
-    background: #fdb682;
-    color:#fff;
-    border:1px solid #fdb682;
-    border-radius:10px
-} */
 
 #userBucketListTitle,
 #addToBucketListLink{
@@ -219,10 +212,6 @@ code {
   text-align: center;
   margin-bottom: 0;
   opacity: .6;
-}
-
-#removeFromBucketListLink {
-  display: none;
 }
 
 .jumboContent {
@@ -279,9 +268,14 @@ code {
   padding-right:0;
 }
 
+#initialSearchBodyContent{
+  margin-bottom:0;
+  height:83vh;
+}
 
-
-
+.initialSearch{
+  padding-right:0;
+}
 
 
 
@@ -313,9 +307,9 @@ code {
     text-align: center;
   }
 
-  #initialSearchBodyContent {
+  /* #initialSearchBodyContent {
     height: 81.2vh;
-  }
+  } */
 }
 
 
