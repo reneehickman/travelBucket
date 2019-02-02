@@ -11,6 +11,7 @@ var config = {
 
   var database = firebase.database();
 
+
   //var tmURL = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=bAS6qJ9GjnzpjGB3vGbEXGpiwlpn1ppZ';
 
   //var googlePlacesURL = 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PHOTOREF&key=AIzaSyCSGl6uFr0JoT1c9RHRu369r_hdYj0eknA';

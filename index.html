@@ -15,51 +15,125 @@
 </head>
 
 <body>
+    <div class="container-fluid allBody">
 
-    <div class="container-fluid header" id="header">
-        <div class="row">
-            <div class="col-sm-12 px-0">
-                <div class="headerBg">
-                    <a href="index.html"><img id="logo" src="assets/images/logo-01.png"></a>
-                    <button id="login" class="btn btn-secondary"><i class="fas fa-user"> </i>&nbsp; Login/Sign Up</button>
-                    <button id="loggedIn" class="btn btn-secondary"><i class="fas fa-user"> </i>&nbsp; Hi, <span id="loggedInUsername"></span></button>
+        <div class="container-fluid header pr-0" id="header">
+            <div class="row">
+                <div class="col-sm-12 px-0">
+                    <div class="headerBg">
+                        <a href="index.html"><img id="logo" src="assets/images/logo-01.png"></a>
+                        <button id="login" class="btn btn-secondary"><i class="fas fa-user"> </i>&nbsp; Login/Sign Up</button>
+                        <button id="loggedIn" class="btn btn-secondary"><i class="fas fa-user"> </i>&nbsp;Name <span id="loggedInUsername"></span></button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--end of header container-->
+        <!--end of header container-->
 
-    <!-- <div class="container-fluid" id="bodyContent"> -->
-
-    <div class="jumbotron jumbotron-fluid" id="bodyContent">
-        <div class="container-fluid" id="initialSearch">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div id="initialSearchDIV">
-                        <h2>What destinations are on your Bucket List?</h2>
-                        <h5>Search destinations to create your own bucket list!</h5>
-                        <div class="input-group mb-3 initialSearchGroup">
-                            <input type="text" id="initialSearchInput" class="form-control" placeholder="Search for places..."
-                                aria-label="Search">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary initialSearchButton" type="submit" id="initialSearchButton">Search</button>
+        <div class="jumbotron jumbotron-fluid" id="initialSearchBodyContent" style="display:none;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="initialSearchDIV">
+                            <h2>What destinations are on your Bucket List?</h2>
+                            <h5>Search destinations to create your own bucket list!</h5>
+                            <div class="input-group mb-3 initialSearchInputGroup">
+                                <input type="text" id="initialSearchInput" class="form-control" placeholder="Search for places..."
+                                    aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary initialSearchButton" type="submit" id="initialSearchButton">Search</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--end of content container-->
+        <!--end of initialSearchBodyContent container-->
+
+        <div class="container-fluid p-0 bodyContent">
+
+            <div class="row bodyRow ">
+                <div class="col resultsCol" id="resultsDIV">
+
+                    <div class="row">
+                        <div class="col">
+                            <div id="searchDIV">
+                                <div class="input-group searchInputGroup">
+                                    <input type="text" id="searchInput" class="form-control" placeholder="Search for places..."
+                                        aria-label="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-secondary searchButton" type="submit" id="searchButton"><i
+                                                class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mr-0">
+                        <div class="col pr-0">
+                            <div class="jumbotron jumbotron-fluid" id="jumboCityPhoto">
+                                <div class="jumboContent">
+                                    <div id="cityName">Venice</div>
+                                    <button class="btn btn-primary" id="addToBucketListLink"><i class="far fa-check-square"></i>
+                                        Add to Bucket List!</button>
+                                    <button class="btn btn-primary" id="removeFromBucketListLink"><i class="far fa-trash-alt"></i>
+                                        Remove from Bucket List</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
 
-    <footer>
-        <div class="container-fluid footer">
-            &copy; 2019 travelBucket
+                    <div class="row info">
+                        <div class="col-xl-6 col-md-12 col-sm-12 mapCol">
+                            <div id="map"><img class="img-fluid" src="assets/images/map.png" id="placeholderMap"></div>
+                        </div>
+
+                        <div class="col-xl-6 col-md-12 col-sm-12 rightCol">
+                            <div id="weatherTitle">
+                                <h4>Current Weather:</h4>
+                            </div>
+                            <div id="weatherContent"></div>
+                            <div id="thingsToDoTitle">
+                                <h4>Things to do:</h4>
+                            </div>
+                            <div id="thingsToDoContent" class="thingsToDo"></div>
+                            <div id="thingsToDoContent" class="thingsToDo"></div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <!--end of results div-->
+
+
+
+                <div class="col-md-3 col-xs-12 pr-0 bucketListCol">
+                    <div id="bucketList">
+                        <div id="userBucketListTitle"><span id="userBucketList">Name</span>'s Bucket List</div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-    </footer>
-    <!--end of footer container-->
 
+
+
+        <footer>
+            <div class="container-fluid footer">
+                &copy; 2019 travelBucket
+            </div>
+        </footer>
+        <!--end of footer container-->
+
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
