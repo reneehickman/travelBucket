@@ -10,6 +10,7 @@ body {
   margin-bottom: 60px;
   font-family: 'Montserrat', sans-serif;
   background: #333;
+  min-height: 450px
 }
 
 .footer {
@@ -27,77 +28,68 @@ body {
   font-size: .8em;
 }
 
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-body>.container {
-  padding: 60px 15px 0;
-}
-
-.footer>.container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-code {
-  font-size: 80%;
-}
-
-
 .headerBg {
   background: #14314f;
   border-bottom: 2px solid #fff;
 }
 
-
 #login {
-  border-radius:15px;
+  border-radius: 15px;
   float: right;
   margin-right: 20px;
   margin-top: 25px;
-  color:#fff;
-  box-shadow:.5px .5px 5px #000;
-  /*   display: none; */
+  color: #fff;
+  box-shadow: .5px .5px 5px #000;
+  display: none;
 }
 
-#login:hover{
-  background:#14314f;
-  color:#fff;
+#login:hover {
+  background: #14314f;
+  color: #fff;
 }
 
 #loggedIn {
-  font-size:.95em;
-  border-radius:15px;
+  font-size: .95em;
+  border-radius: 15px;
   float: right;
   margin-right: 20px;
   margin-top: 25px;
-  font-weight:600;
-  /* display: none; */
+  font-weight: 600;
+  display: none;
 }
-
-
 
 #logo {
   padding: 20px 20px;
 }
 
+.initialSearchInputGroup {
+  margin: 0px auto;
+}
+
+#initialSearchBodyContent {
+  height: 100v;
+  text-align: center;
+  content: "";
+  position: absolute;
+  top: 93px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('../images/initialSearchPage2_45.jpg') no-repeat center center;
+  background-size: cover;
+}
+
 #initialSearchDIV {
   text-align: center;
   display: inline-block;
-  padding:15px;
-  padding-top: 6%;
+  padding: 15px;
+  padding-top: 7%;
+  /* display: none; */
 }
-
-
-.initialSearchInputGroup {
-  margin: 0px auto
-}
-
 
 #initialSearchDIV h2 {
   padding-bottom: 20px;
+  font-size: 2.5em;
   color: #fff;
   text-shadow: 1px 1px 2px #000;
 }
@@ -107,31 +99,9 @@ code {
   color: #fff;
 }
 
-#initialSearchBodyContent {
-  height: 85vh;
-  position: relative;
-  z-index: 1;
-  background: #333;
-  text-align: center;
-  margin-bottom:0px;
-  padding-left:15px;
-  padding-right:15px;
+#resultsDIV {
+  display: none;
 }
-
-#initialSearchBodyContent:before {
-  text-align: center;
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: url('../images/initialSearchPage2.jpg') no-repeat center center;
-  background-size: cover;
-  opacity: .35;
-}
-
 
 #searchInput,
 #searchButton {
@@ -139,90 +109,86 @@ code {
 }
 
 #initialSearchButton,
-#searchButton{
-  background:#14314f;
-  opacity:.9;
+#searchButton {
+  background: #14314f;
+  opacity: .9;
 }
 
 #initialSearchButton:hover,
-#searchButton:hover{
-  background:#6c757d;
+#searchButton:hover {
+  background: #6c757d;
 }
-
 
 .bodyContent {
   background: #333;
-  padding-left:0px;
-  padding-right:0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
+#bucketListDIV {
+  display: none;
+}
 
 .bucketListCol {
-  padding-left:0;
-  min-height:200px;
+  padding-left: 0;
+  min-height: 200px;
 }
-
 
 #bucketList {
   background: #ddd;
   height: 100%;
-  text-align:center
+  text-align: center
 }
 
-
+#removeFromBucketListLink,
 #userBucketListTitle,
-#addToBucketListLink{
-    background: #005a5b;
-    color:#fff;
-    border:1px solid #005a5b;
-    border-radius:10px;
+#addToBucketListLink {
+  background: #005a5b;
+  color: #fff;
+  border: 1px solid #005a5b;
+  border-radius: 10px;
 }
 
-#addToBucketListLink{
-  box-shadow:.5px .5px 5px #000;
+#removeFromBucketListLink,
+#addToBucketListLink {
+  display: none;
+  box-shadow: .5px .5px 5px #000;
 }
 
-
-#addToBucketListLink:hover{
-  background:#005a5b;
+#removeFromBucketListLink,
+#addToBucketListLink:hover {
+  background: #005a5b;
   color: #fff;
   border: 2px solid #007368;
 }
 
-#userBucketListTitle{
-  border-radius:0;
-  padding:5px;
+#userBucketListTitle {
+  border-radius: 0;
+  padding: 5px;
 }
 
-#jumboCityPhoto {
-  position: relative;
-  z-index: 1;
-  background: #333;
-  min-height: 250px;
-  text-align: center;
-  margin-bottom: 0;
-  border-bottom: 2px solid #fff;
-
-}
-
-#jumboCityPhoto:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+#cityPhoto {
   background: url('../images/resultsPage.jpg') no-repeat center center;
   background-size: cover;
   text-align: center;
   margin-bottom: 0;
-  opacity: .6;
+  min-height: 300px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  width: 100%;
+
 }
 
-.jumboContent {
+.cityContent {
   text-align: center;
-  padding-top: 9%;
+  height: 100%;
+  vertical-align: bottom;
+  background: rgba(0, 0, 0, .3);
+  padding-bottom: 98px;
+  padding-top: 91px;
+  position: relative;
+  top: px;
+
 }
 
 #cityName {
@@ -233,56 +199,43 @@ code {
 
 }
 
-#placeholderMap{
-  width:100%;
- padding:40px;
-}
-
-
 #weatherTitle h4,
-#thingsToDoTitle h4{
-  color:#fff;
-  font-weight:bold;
-  margin-top:40px;
+#thingsToDoTitle h4 {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 40px;
 }
 
+#map {
+  width: 100%;
+  background: #ddd;
+  border: 1px solid #999;
+}
 
-.rightCol{
+.rightCol {
   text-align: left;
 }
 
-
-.bodyRow{
-  margin-right:0;
+.bodyRow {
+  margin-right: 0;
 }
 
-
-/* .row{
-  margin-right:0;
+.searchCol,
+.cityCol {
+  padding-right: 0px;
 }
 
-.col{
-  padding-right:0;
-} */
-
-.allBody{
-  padding:0;
+.allBody {
+  padding: 0;
 }
 
-
-.mapCol{
-  padding-right:0;
+.mapCol {
+  padding-right: 0;
 }
 
-
-.initialSearch{
-  padding-right:0;
+.initialSearch {
+  padding-right: 0;
 }
-
-
-
-
-
 
 
 
@@ -293,11 +246,13 @@ code {
   #logo {
     text-align: center;
     padding: 20px 10px;
-
   }
 
   #login,
   #loggedIn {
+    position: relative;
+    top: 1p;
+    z-index: 2;
     width: 100%;
     border-radius: 0;
     margin: 0;
@@ -307,58 +262,31 @@ code {
 
   .header {
     text-align: center;
+    margin-bottom: 38px;
   }
 
-  #initialSearchBodyContent {
-  height: 79vh;
+  #initialSearchDIV h2 {
+    font-size: 2.2em;
+    padding-top: 12%;
   }
 
-  /* #initialSearchBodyContent {
-    height: 81.2vh;
-  } */
 }
 
-
-
-
-
-
 @media (min-width: 576px) and (max-width: 767.98px) {
-
-
   .initialSearchInputGroup {
     width: 80%;
   }
-
 }
 
-
 @media (min-width: 768px) and (max-width: 991.98px) {
-
   .initialSearchInputGroup {
     width: 70%;
   }
-
 }
 
-@media (min-width: 768px) {
-  .resultsCol{
-  padding-right:0;
-  border-right: 2px solid #fff;
-}
-}
+@media (min-width: 768px) {}
 
-
-
-@media (min-width: 576px) {
-  
-}
-
-#initialSearchDIV h2 {
-  font-size: 2.5em;
-}
-
-
+@media (min-width: 576px) {}
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .initialSearchInputGroup {
@@ -367,9 +295,7 @@ code {
 }
 
 @media (min-width: 1200px) {
-
   .initialSearchInputGroup {
     width: 80%;
   }
-
 }

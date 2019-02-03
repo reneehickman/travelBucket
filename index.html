@@ -20,13 +20,14 @@
                         <div class="headerBg">
                             <a href="index.html"><img id="logo" src="assets/images/logo-01.png"></a>
                             <button id="login" class="btn btn-secondary"><i class="fas fa-user"> </i>&nbsp; Login/Sign Up</button>
-                            <button id="loggedIn" class="btn btn-secondary" style="display:none"><i class="fas fa-user"> </i>&nbsp;Name <span id="loggedInUsername"></span></button>
+                            <button id="loggedIn" class="btn btn-secondary"><i class="fas fa-user"> </i>&nbsp;Name <span id="loggedInUsername"></span></button>
                         </div>
                     </div>
                 </div>
             </div>
             <!--end of header container-->
     
+            <!-- <div id="loginDIV"></div> -->
     
             <!--start of bodyContent container-->
             <div class="container-fluid bodyContent">
@@ -35,7 +36,7 @@
             <div class="row bodyRow ">
     
             <!--start of initialSearchBodyContent div-->   
-            <div class="jumbotron jumbotron-fluid col" id="initialSearchBodyContent">
+            <div class="col" id="initialSearchBodyContent">
                 <div class="container-fluid initialSearch">
                     <div class="row">
                         <div class="col">
@@ -58,11 +59,11 @@
     
     
                     <!--start of resultCol div-->
-                    <div class="col resultsCol" id="resultsDIV" style="display:none;">
+                    <div class="col resultsCol" id="resultsDIV">
     
                         <!--search input-->
                         <div class="row">
-                            <div class="col">
+                            <div class="col searchCol">
                                 <div id="searchDIV">
                                     <div class="input-group searchInputGroup">
                                         <input type="text" id="searchInput" class="form-control" placeholder="Search for places..." aria-label="Search">
@@ -76,14 +77,14 @@
     
     
                         <!--jumbotron with place photo and name and add to bucket list button-->
-                        <div class="row mr-0">
-                            <div class="col pr-0">
-                                <div class="jumbotron jumbotron-fluid" id="jumboCityPhoto">
-                                    <div class="jumboContent">
+                        <div class="row">
+                            <div class="col cityCol">
+                                <div class="cityPhoto" id="cityPhoto">
+                                    <div class="cityContent">
                                         <div id="cityName">Venice</div>
                                         <button class="btn btn-primary" id="addToBucketListLink"><i class="far fa-check-square"></i>
                                             Add to Bucket List!</button>
-                                        <button class="btn btn-primary" id="removeFromBucketListLink" style="display:none"><i class="far fa-trash-alt"></i>
+                                        <button class="btn btn-primary" id="removeFromBucketListLink"><i class="far fa-trash-alt"></i>
                                             Remove from Bucket List</button>
                                     </div>
                                 </div>
@@ -94,11 +95,11 @@
     
                         <!--map, weather and thingsToDo info-->
                         <div class="row info">
-                            <div class="col-xl-6 col-md-12 col-sm-12 mapCol">
-                                <div id="map"><img class="img-fluid" src="assets/images/map.png" id="placeholderMap"></div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mapCol">
+                                <div id="map"></div>
                             </div>
     
-                            <div class="col-xl-6 col-md-12 col-sm-12 rightCol">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightCol">
                                 <div id="weatherTitle">
                                     <h4>Current Weather:</h4>
                                 </div>
@@ -114,7 +115,7 @@
     
     
                     <!--start of bucketListCol-->
-                    <div class="col-md-3 col-xs-12 pr-0 bucketListCol" style="display:none;">
+                    <div class="col-md-3 col-xs-12 pr-0 bucketListCol" id="bucketListDIV">
                         <div id="bucketList">
                             <div id="userBucketListTitle"><span id="userBucketList">Name</span>'s Bucket List</div>
                             <div id="bucketListItem"></div>
