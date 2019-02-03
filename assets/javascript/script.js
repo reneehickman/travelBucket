@@ -21,14 +21,15 @@ var addToBucketListButton = $("#addToBucketListLink");
 var removeFromBucketListButton = $("#RemoveFromBucketListLink");
 
 
-  initialSearchDIV.show();
+  
   resultsDIV.hide();
   bucketListDIV.hide();
   loginDIV.hide();
-  loginButton.show();
   loggedInButton.hide();
   addToBucketListButton.hide();
   removeFromBucketListButton.hide();
+  initialSearchDIV.show();
+  loginButton.show();
 
 
 // function showResults(){

@@ -100,7 +100,7 @@ body {
 }
 
 #resultsDIV {
-  display: none;
+  /* display: none; */
 }
 
 #searchInput,
@@ -184,10 +184,9 @@ body {
   height: 100%;
   vertical-align: bottom;
   background: rgba(0, 0, 0, .3);
-  padding-bottom: 98px;
-  padding-top: 91px;
+  padding-bottom: 115px;
+  padding-top: 111px;
   position: relative;
-  top: px;
 
 }
 
@@ -206,18 +205,13 @@ body {
   margin-top: 40px;
 }
 
-#map {
-  width: 100%;
-  background: #ddd;
-  border: 1px solid #999;
-}
-
-.rightCol {
+.leftCol {
   text-align: left;
 }
 
 .bodyRow {
   margin-right: 0;
+  height:100%;
 }
 
 .searchCol,
@@ -227,15 +221,94 @@ body {
 
 .allBody {
   padding: 0;
+  height:100%;
+}
+
+.rowInfo{
+  height:100%;
 }
 
 .mapCol {
   padding-right: 0;
+  height:100%;
+}
+
+#mapContain{
+  background:#ddd;
+  width:90%;
+  min-height:87.5%;
+  /* margin-left:30px; */
+  margin-top:30px;
+/*   border: 1px solid #999; */
+}
+
+/* #mapTitle{
+  background:#14314f;
+  color:#fff;
+  font-weight:bold;
+  position:relative;
+} */
+
+.mapTitle{
+  margin-top:0px;
+  margin-left:0px;
+}
+
+#mapContain{
+  padding-left:0px;
+  padding-right:0px;
+}
+
+#map{
+  height:370px;
 }
 
 .initialSearch {
   padding-right: 0;
 }
+
+
+nav{
+  background:#14314f;
+  font-weight:bold;
+  margin-left:30px;
+  margin-top:30px;
+  position:relative;
+}
+
+.title{
+padding-top:0px;
+padding-bottom:0px;
+
+}
+
+.h1{
+  font-weight:bold;
+  color:#fff;
+  font-size:1.3em;
+  margin:0px auto;
+}
+
+#weatherContent{
+  background:#ddd;
+  min-height:150px;
+  margin-left:30px;
+  margin-bottom:30px;
+}
+
+
+#thingsToDoContent{
+  background:#ddd;
+  min-height:150px;
+  margin-left:30px;
+  margin-bottom:30px;
+}
+
+.resultsCol,{
+  height:100%;
+  
+}
+
 
 
 
@@ -262,7 +335,7 @@ body {
 
   .header {
     text-align: center;
-    margin-bottom: 38px;
+    /* margin-bottom: 38px; */
   }
 
   #initialSearchDIV h2 {
@@ -270,11 +343,26 @@ body {
     padding-top: 12%;
   }
 
+  #thingsToDoContent{
+  margin-bottom:0px;
+}
+
+#mapContain{
+  margin-bottom:30px;
+}
+
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .initialSearchInputGroup {
     width: 80%;
+  }
+
+  #mapContain{
+    margin-bottom:30px;
+  }
+  #thingsToDoContent{
+    margin-bottom:0px;
   }
 }
 

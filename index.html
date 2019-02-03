@@ -95,20 +95,34 @@
     
                         <!--map, weather and thingsToDo info-->
                         <div class="row info">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mapCol">
-                                <div id="map"></div>
-                            </div>
-    
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightCol">
+                            
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 leftCol">
                                 <div id="weatherTitle">
-                                    <h4>Current Weather:</h4>
+                                        <nav class="navbar">
+                                                <span class="mb-0 h1 title">Current Weather</span>
+                                              </nav>
+                                    <!-- <h4>Current Weather:</h4> -->
                                 </div>
                                 <div id="weatherContent"></div>
+                                
                                 <div id="thingsToDoTitle">
-                                    <h4>Things to do:</h4>
+                                        <nav class="navbar">
+                                                <span class="mb-0 h1 title">Things to do</span>
+                                              </nav>
+                                    <!-- <h4>Things to do:</h4> -->
                                 </div>
                                 <div id="thingsToDoContent" class="thingsToDo"></div>
                             </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mapCol">
+                                    <div class ="container-fluid" id="mapContain">
+                                            <nav class="navbar mapTitle">
+                                                    <span class="mb-0 h1 title">Map</span>
+                                                  </nav>
+                                        <div id="map"></div>
+                                    </div>
+                                </div>
+
                         </div> 
     
                     </div><!--end of resultsCol div-->
@@ -127,6 +141,8 @@
             </div><!--end of bodyContent container-->
     
     
+
+        </div>
             <footer>
                 <div class="container-fluid footer">
                     © 2019 travelBucket
@@ -134,7 +150,7 @@
             </footer>
             <!--end of footer container-->
     
-        </div>
+        
     
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
