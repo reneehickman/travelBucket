@@ -19,7 +19,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  line-height: 70px;
+  line-height: 40px;
   /* Vertically center the text there */
   background-color: #14314f;
   color: #fff;
@@ -66,12 +66,25 @@ body {
   margin: 0px auto;
 }
 
-#initialSearchBodyContent {
+/* #initialSearchBodyContent {
   height: 100v;
   text-align: center;
   content: "";
   position: absolute;
   top: 93px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('../images/initialSearchPage2_45.jpg') no-repeat center center;
+  background-size: cover;
+} */
+
+#initialSearchBodyContent {
+  height: 85vh;
+  text-align: center;
+  content: "";
+  position: relative;
+  /* top: 93px; */
   bottom: 0;
   left: 0;
   right: 0;
@@ -100,7 +113,7 @@ body {
 }
 
 #resultsDIV {
-  /* display: none; */
+  display: none;
 }
 
 #searchInput,
@@ -136,6 +149,7 @@ body {
 
 #bucketList {
   background: #ddd;
+  border-left:1px solid #fff;
   height: 100%;
   text-align: center
 }
@@ -224,12 +238,17 @@ body {
   height:100%;
 }
 
-.rowInfo{
+/* .rowInfo{
   height:100%;
+} */
+
+.info{
+  margin-bottom:38px;
 }
 
+
 .mapCol {
-  padding-right: 0;
+  /* padding-right: 0; */
   height:100%;
 }
 
@@ -351,6 +370,14 @@ padding-bottom:0px;
   margin-bottom:30px;
 }
 
+#initialSearchBodyContent {
+  height: 80vh;
+}
+
+.mapCol {
+  padding-right: 0;
+}
+
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -364,12 +391,35 @@ padding-bottom:0px;
   #thingsToDoContent{
     margin-bottom:0px;
   }
+
+  #initialSearchBodyContent {
+  height: 84vh;
+}
+
+.mapCol {
+  padding-right: 0;
+}
+
+nav,
+#weatherContent,
+#thingsToDoContent{
+margin-left:40px;
+margin-right:25px;
+}
+
+.mapTitle{
+  margin-right:0px;
+}
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .initialSearchInputGroup {
     width: 70%;
   }
+  #initialSearchBodyContent {
+  height: 84vh;
+}
 }
 
 @media (min-width: 768px) {}
