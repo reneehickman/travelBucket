@@ -43,12 +43,13 @@
                             <div id="initialSearchDIV">
                                 <h2>What destinations are on your Bucket List?</h2>
                                 <h5>Search destinations to create your own bucket list!</h5>
-                                <div class="input-group mb-3 initialSearchInputGroup">
-                                    <input type="text" id="initialSearchInput" class="form-control" placeholder="Search for places..." aria-label="Search">
+                                <form id="formInitialInput"><div class="input-group mb-3 initialSearchInputGroup">
+                                    <input type="text" id="initialSearchInput" class="form-control searchInput" placeholder="Search for places..." aria-label="Search">
+                                    <!-- <input type="text" id="initialSearchInput" class="form-control searchInput" placeholder="Search for places..." aria-label="Search"> -->
                                     <div class="input-group-append">
                                         <button class="btn btn-secondary searchButton" type="submit" id="initialSearchButton">Search</button>
                                     </div>
-                                </div>
+                                </div></form>
                             </div>
                         </div>
                     </div>
@@ -65,12 +66,13 @@
                         <div class="row">
                             <div class="col searchCol">
                                 <div id="searchDIV">
-                                    <div class="input-group searchInputGroup">
-                                        <input type="text" id="searchInput" class="form-control" placeholder="Search for places..." aria-label="Search">
+                                        <form id="formSearchInput"><div class="input-group searchInputGroup">
+                                        <input type="text" id="searchInput" class="form-control searchInput" placeholder="Search for places..." aria-label="Search">
+                                        <!-- <input type="text" id="searchInput" class="form-control searchInput" placeholder="Search for places..." aria-label="Search"> -->
                                         <div class="input-group-append">
                                             <button class="btn btn-secondary searchButton" type="submit" id="searchButton"><i class="fas fa-search"></i></button>
                                         </div>
-                                    </div>
+                                    </div></form>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +83,7 @@
                             <div class="col cityCol">
                                 <div class="cityPhoto" id="cityPhoto">
                                     <div class="cityContent">
-                                        <div id="cityName">Venice</div>
+                                        <div id="cityName"></div>
                                         <button class="btn btn-primary" id="addToBucketListLink"><i class="far fa-check-square"></i>
                                             Add to Bucket List!</button>
                                         <button class="btn btn-primary" id="removeFromBucketListLink"><i class="far fa-trash-alt"></i>
@@ -154,10 +156,10 @@
     
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-        <script src="./assets/javascript/moment.js"></script>
         <script src="./assets/javascript/script.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
     
