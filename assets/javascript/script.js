@@ -46,7 +46,7 @@ $("#initialSearchButton").on("click", function (event) {
   var limit = 1;
 
   // Here we construct our URL
-  var queryURL = "http://dataservice.accuweather.com/locations/v1/cities/search?apikey=TniUBmLQMyMOCQn9JQeefxCVZEbpTolr&q=" + userInput + "&offset=" + limit;
+  var queryURL = "https://dataservice.accuweather.com/locations/v1/cities/search?apikey=TniUBmLQMyMOCQn9JQeefxCVZEbpTolr&q=" + userInput + "&offset=" + limit;
 
   // Creates AJAX call for the specific input value the user enters
   $.ajax({
@@ -126,7 +126,7 @@ $("#searchButton").on("click", function (event) {
   var limit = 1;
 
   // Here we construct our URL
-  var queryURL = "http://dataservice.accuweather.com/locations/v1/cities/search?apikey=TniUBmLQMyMOCQn9JQeefxCVZEbpTolr&q=" + userInput + "&offset=" + limit;
+  var queryURL = "https://dataservice.accuweather.com/locations/v1/cities/search?apikey=TniUBmLQMyMOCQn9JQeefxCVZEbpTolr&q=" + userInput + "&offset=" + limit;
 
   // Creates AJAX call for the specific input value the user enters
   $.ajax({
@@ -156,8 +156,8 @@ $("#searchButton").on("click", function (event) {
 
     }
 
+    
     var queryURL = "https://pixabay.com/api/?key=11499654-c065dd5a493546456b466ce84&q=" + userInput + "&image_type=photo";
-
 
       $.ajax({
         url: queryURL,
